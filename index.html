@@ -422,8 +422,6 @@ footer{border-top:1px solid rgba(212,160,23,.25);padding-block:44px calc(44px + 
 .em-jogo{display:flex;flex-direction:column;gap:16px;max-width:760px;margin-inline:auto}
 .em-jogo p{font-size:17px;line-height:1.6;color:var(--apoio)}
 .em-jogo p.ressalva{color:var(--texto);border-left:2px solid var(--ambar);padding-left:16px}
-.entrega{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:12px;border:1px solid rgba(212,160,23,.4);background:rgba(212,160,23,.06);font-size:15px;color:var(--texto)}
-.entrega svg{flex:none;margin-top:2px}
 @media (min-width:860px){.caps-fase{grid-template-columns:repeat(3,minmax(0,1fr))}#caps-f1{grid-template-columns:repeat(2,minmax(0,1fr))}#caps-apoio{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:560px) and (max-width:859px){.caps-fase{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .saida-nota{font-size:13px;line-height:1.5;opacity:.75}
@@ -620,7 +618,6 @@ window.medir = function(ev, dados){
         <p class="valor-nota">ou <b>R$ 1.997</b> à vista · 12 meses de acesso</p>
         <p class="valor-total">No cartão, as 12 parcelas somam <b>R$ 2.478,48</b>.</p>
         <p class="juros">*Parcelamento com juros da plataforma de pagamento (3,49% ao mês). O valor exato aparece no checkout.</p>
-        <p class="entrega"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="#D4A017" stroke-width="1.8"/><path d="M3 10h18M8 3v4M16 3v4" stroke="#D4A017" stroke-width="1.8"/></svg><span><b>Pré-venda.</b> O 1º módulo é liberado em 19/11/2026 e o conteúdo completo até 28/12/2026. A garantia começa a contar quando você recebe o primeiro módulo.</span></p>
         <p class="plano-grupo">O método</p>
         <ul>
           <li><svg width="20" height="20" viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11.5l4.5 4.5L18 6.5" fill="none" stroke="#D4A017" stroke-width="2.2"/></svg>A Linha de 42 Dias: 12 checkpoints em 3 fases</li>
@@ -644,7 +641,7 @@ window.medir = function(ev, dados){
     </div>
     <div class="garantia rv">
       <svg width="48" height="48" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4l13 5v9c0 8.5-5.6 15.4-13 18-7.4-2.6-13-9.5-13-18V9z" fill="rgba(212,160,23,.15)" stroke="#D4A017" stroke-width="1.5"/><path d="M14 20l4 4 8-9" fill="none" stroke="#D4A017" stroke-width="2"/></svg>
-      <div class="gar-texto"><b>Garantia total de 30 dias</b><span>15 dias incondicionais e mais 15 dias de garantia condicionada, contados a partir do recebimento do primeiro módulo.</span>
+      <div class="gar-texto"><b>Garantia total de 30 dias</b><span>15 dias incondicionais e mais 15 dias de garantia condicionada.</span>
         <details class="gar-det"><summary>Ver como funciona</summary>
         <ol class="gar-passos">
           <li><i>1</i><div><strong>Dias 1 a 15 · incondicional</strong>Cancele quando quiser, sem precisar explicar nada. O valor volta integral.</div></li>
@@ -697,8 +694,7 @@ window.medir = function(ev, dados){
       <details><summary>Serve para a minha dor?</summary><p>O Raio-X Biomecânico é para dores musculoesqueléticas persistentes, como lombar, pescoço, joelho e ombro, que melhoram e voltam. Se você tem algum sinal de alerta, procure uma avaliação presencial antes de começar.</p></details>
       <details><summary>Isso substitui o médico ou a fisioterapia?</summary><p>Não. O Raio-X Biomecânico é educação postural e autoavaliação funcional guiada. Não é atendimento médico nem consulta de fisioterapia, e não substitui a avaliação de um profissional de saúde.</p></details>
       <details><summary>E se eu reprovar várias vezes no mesmo ponto?</summary><p>Faz parte do processo. Cada reprovação mostra onde está a sobrecarga. Você segue o protocolo daquele ponto, re-testa, e o próximo checkpoint só abre quando o anterior estiver dentro da referência.</p></details>
-      <details><summary>Quando recebo o acesso?</summary><p>O Raio-X Biomecânico está em pré-venda. O 1º módulo é liberado em 19/11/2026 e o conteúdo completo até 28/12/2026. Você recebe o acesso por e-mail.</p></details>
-      <details><summary>Como funciona a garantia?</summary><p>São 30 dias no total, contados a partir do recebimento do primeiro módulo. Nos primeiros 15, a garantia é incondicional: você cancela quando quiser, sem explicar nada. Do 16º ao 30º dia, ela vale se as dores pioraram ou se você não conseguiu entender o sistema. Nesse caso, você envia vídeos, o Douglas verifica o que está acontecendo e, se juntos decidirmos que o sistema não é para você, o valor é devolvido integralmente. <button class="abre-termo" type="button" data-termo>Ler o termo de garantia</button></p></details>
+      <details><summary>Como funciona a garantia?</summary><p>São 30 dias no total. Nos primeiros 15, a garantia é incondicional: você cancela quando quiser, sem explicar nada. Do 16º ao 30º dia, ela vale se as dores pioraram ou se você não conseguiu entender o sistema. Nesse caso, você envia vídeos, o Douglas verifica o que está acontecendo e, se juntos decidirmos que o sistema não é para você, o valor é devolvido integralmente. <button class="abre-termo" type="button" data-termo>Ler o termo de garantia</button></p></details>
       <details><summary>Posso parcelar?</summary><p>Pode. Sai por R$ 1.997 à vista ou em até 12x de R$ 206,54 no cartão. O parcelamento tem os juros da plataforma de pagamento, de 3,49% ao mês: as 12 parcelas somam R$ 2.478,48, cerca de 24% a mais que o valor à vista. O valor exato aparece no checkout.</p></details>
       <details><summary>Por quanto tempo tenho acesso?</summary><p>Por 12 meses. Depois disso, você pode renovar por metade do valor.</p></details>
       <details><summary>Ainda não fiz o Código da Dor. Posso começar direto?</summary><p>Pode. Mas vale fazer o teste grátis antes: leva 5 minutos e mostra a sua primeira pista. <a href="#codigo" data-codigo>Fazer o Código da Dor</a></p></details>
@@ -1020,7 +1016,7 @@ Interrompa imediatamente qualquer teste e procure atendimento presencial se apre
     <div class="termo-cab"><h2 id="termo-titulo">Termo de Garantia</h2><button class="termo-fechar" type="button" aria-label="Fechar" data-fechar-termo>×</button></div>
     <div class="termo-corpo">
 <h2><span>Cláusula Primeira</span>Do prazo de garantia</h2>
-<p>O presente Termo de Garantia estabelece o prazo total de 30 (trinta) dias corridos de garantia, contados a partir do recebimento do primeiro módulo, período no qual o CONTRATANTE poderá solicitar o cancelamento e a restituição do valor pago, observadas as condições específicas de cada etapa descritas nas cláusulas seguintes.</p>
+<p>O presente Termo de Garantia estabelece o prazo total de 30 (trinta) dias corridos de garantia, contados a partir da data de contratação, período no qual o CONTRATANTE poderá solicitar o cancelamento e a restituição do valor pago, observadas as condições específicas de cada etapa descritas nas cláusulas seguintes.</p>
 <h2><span>Cláusula Segunda</span>Da garantia incondicional</h2>
 <p>Os 15 (quinze) dias iniciais do prazo constituem garantia incondicional. Nesse período, o CONTRATANTE poderá cancelar a contratação a qualquer momento, sem necessidade de apresentar justificativa, explicação ou comprovação, bastando manifestar sua vontade de forma expressa ao CONTRATADO, hipótese em que será devolvido o valor integral pago.</p>
 <h2><span>Cláusula Terceira</span>Da garantia condicionada</h2>
